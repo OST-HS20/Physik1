@@ -1,15 +1,24 @@
 % Document information
-\newcommand{\titleinfo}{Zusammenfassung Template}
-\newcommand{\authorinfo}{Name Nachname}
-\newcommand{\version}{1.0}
-\newcommand{\versioninfo}{FS21}
+\newcommand{\titleinfo}{Formelsammlung Physik1}
+\newcommand{\authorinfo}{Sandro Pedrett}
+\newcommand{\version}{0.1}
+\newcommand{\versioninfo}{HS20}
 % Header
 \include{Template/Header}
+
+% see https://tex.stackexchange.com/a/95842 for more information
+\newenvironment{formula}[1]{\begin{equation*}\colorboxed{red}{\begin{aligned}#1\end{aligned}}\qquad\begin{tabular}{>{$}l<{$} @{${}:{}$} l >{$}r<{$}}}{\end{tabular}\end{equation*}}
+
+
+\newcommand{\kuchling}[1]{\verweisextern{Kuchling}{#1}}
 
 % Document
 \begin{document}
 
-\tableofcontents
-\input{Sections/First Section}
+\input{Sections/Statik}
+\input{Sections/Kinematik}
+\input{Sections/Energie}
+\input{Sections/Impuls}
+\input{Sections/Gravitation}
 
 \end{document}
