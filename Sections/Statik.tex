@@ -24,7 +24,7 @@ Generelles Vorgehen:
 
 
 
-\subsection{Reibung}
+\subsection{Reibung \kuchling{104}}
 \begin{formula}
 	{F_R = F_N \cdot \mu} 
 	
@@ -32,8 +32,7 @@ Generelles Vorgehen:
 	F_N & Normalkraft & [N] \\
 	\mu & Koeffizient & [1]
 \end{formula}
-\todo{was ist a ?}
-\noindent Der Koeffizient ist $\mu_H = \tan(\alpha)$ oder auf einer Schiefe Ebene $\mu_G= \tan(\alpha) - \frac{a}{g\cdot\cos(\alpha)}$.
+\noindent Der Haftreibungs-Koeffizient ist $\mu_H = \tan(\alpha)$ und der Gleitreibungskoeffizient $\mu_G= \tan(\alpha) - \frac{a}{g\cdot\cos(\alpha)}$. $\mu_h > \mu_g$
 
 \subsection{Dichte}
 \begin{formula}
@@ -44,17 +43,19 @@ Generelles Vorgehen:
 	V &    Volumen & [m^3]
 \end{formula}
 
-\subsection{Dehnung}
-\todo{}
+\subsection{Dehnung \kuchling{184}}
 \begin{formula}
-	{\varepsilon = \frac{\Delta l}{l} = \frac{1}{E} \cdot \sigma} 
+	{\sigma = \frac{F}{A} \\ = E \frac{\Delta l}{l}	= E\varepsilon}
 	
-	\varepsilon & Dehnung & [m]\\
-	l & Länge & [m]\\
+	\varepsilon & Relative Längenänd. & [m]\\
+	l & Länge \underline{ohne} Kraft & [m]\\
+	\Delta l & Längeänd. \underline{mit} Kraft & [m]\\
 	E & Elastizitätmodul & \\
 	\sigma & Druck & [N/m^2]\\
+	A & Querschnittsfläche & [m^2]\\
 \end{formula}
 
+Für Elastizitätmodul $E$ siehe \kuchling{624}
 
 \subsection{Druck/Spannung}
 \todo{}

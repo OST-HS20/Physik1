@@ -11,25 +11,47 @@ Ein Impuls ist folgendermassen beschrieben:
 \end{formula}
 
 \noindent Der Impulserhaltungs-Satz besagt:
-\[
-m_1 \cdot v_1 + m_2 \cdot v_2 = m_1 \cdot v_1' + m_2 \cdot v_2'
-\]
-
-\noindent \textbf{Elastischer Stoss}
-\[
-v_1' = \frac{(m_1 - m_2)v_1 + 2m_2v_2}{m_1 + m_2}
-\]
-
-\noindent \textbf{Unelastischer Stoss}
 \begin{formula}
-	{W = E_1 - E_2 =\\ \frac{m_1 \cdot m_2}{2(m_1 + m_2)}(v_1 - v_2)^2} 
+	{m_1 \cdot v_1 + m_2 \cdot v_2 \\= m_1 \cdot v_1' + m_2 \cdot v_2'} 
+	
+	m & Masse & [kg] \\
+	v & Geschw. \underline{vor} Stoss & [m/s] \\
+	v' & Geschw. \underline{nach} Stoss & [m/s] \\
+\end{formula}
+
+\subsection{Elastizität}
+\includegraphics[width=\columnwidth]{./Images/elastizität.png}
+
+\subsubsection{Elastischer Stoss} \kuchling{119}
+\begin{formula}
+	{v_1' = \frac{(m_1 - m_2)v_1 + 2m_2v_2}{m_1 + m_2} \\ \\
+ 	 v_2' = \frac{(m_2 - m_1)v_2 + 2m_1v_1}{m_2 + m_1}}
+  
+  	m & Masse & [kg] \\
+	v & Geschw. \underline{vor} Stoss & [m/s] \\
+    v' & Geschw. \underline{nach} Stoss & [m/s] \\
+\end{formula}
+
+\subsubsection{Unelastischer Stoss} \kuchling{121}
+\begin{formula}
+	{v' = \frac{m_1v_1 + m_2v_2}{m_1 + m_2}}
+	
+	m & Masse & [kg] \\
+	v & Geschw. \underline{vor} Stoss & [m/s] \\
+	v' & Geschw. \underline{nach} Stoss & [m/s] \\
+\end{formula}
+
+\noindent Verformungsarbeit\label{verformungsarbeit}
+\begin{formula}
+	{W &= E_1 - E_2 \\ &= \frac{m_1 \cdot m_2}{2(m_1 + m_2)}(v_1 - v_2)^2} 
 	
 	W & Deformationsarbeit & [J, Ws] \\
 	E_1 & $\sum E_{Kin}$ \underline{vor} Stoss & [J] \\
 	E_2 & $\sum E_{Kin}$ \underline{nach} Stoss & [J] \\
 \end{formula}
 
-\todo{Schwerpunktgeschwindigkeit\\
+\subsubsection{Schwerpunktgeschwindigkeit}
+\todo{
 	\[
 		u = \frac{m_1v_1 + m_2v_2}{m_1 + m_2}
 	\]
@@ -48,5 +70,6 @@ v_1' = \frac{(m_1 - m_2)v_1 + 2m_2v_2}{m_1 + m_2}
 	\omega & Winkelgeschwindigkeit & [1/s] \\
 	J & Trägheitsmoment Achse & [kg \cdot m^2]
 \end{formula}
-\\
+\newpage
 \includegraphics[width=\columnwidth]{./Images/Trägheitsmoment.png}
+\newpage
