@@ -1,13 +1,27 @@
 % Document information
 \newcommand{\titleinfo}{Formelsammlung Physik1}
 \newcommand{\authorinfo}{Sandro Pedrett}
-\newcommand{\version}{0.1}
+\newcommand{\version}{1.0}
 \newcommand{\versioninfo}{HS20}
 % Header
 \include{Template/Header}
 
+
 % see https://tex.stackexchange.com/a/95842 for more information
-\newenvironment{formula}[1]{\begin{equation*}\colorboxed{red}{\begin{aligned}#1\end{aligned}}\qquad\begin{tabular}{>{$}l<{$} @{${}:{}$} l >{$}r<{$}}}{\end{tabular}\end{equation*}}
+\newenvironment{formula}[1]{
+	\par \begin{tabular*}{\columnwidth}{l  @{\extracolsep{\fill}} r}
+	\colorboxed{red}{
+		\begin{aligned}#1\end{aligned}
+	}
+	&
+	\begin{tabular}{
+			>{$}l<{$}
+			 @{${}:{}$} l 
+			>{$}r<{$}
+		}
+} {
+	\end{tabular}\end{tabular*}
+}
 
 % Verweise
 \newcommand{\kuchling}[1]{\verweisextern{Kuchling}{#1}}
@@ -17,6 +31,9 @@
 
 \input{Sections/Statik}
 \input{Sections/Kinematik}
+\newpage
+\input{Sections/Dynamik}
+\newpage
 \input{Sections/Energie}
 \input{Sections/Impuls}
 \input{Sections/Gravitation}

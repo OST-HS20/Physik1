@@ -1,7 +1,7 @@
 \section{Impuls \kuchling{119}}
 Ein Impuls ist folgendermassen beschrieben:
 \begin{formula}
-	{F = \frac{p}{t} \rightarrow p = m \cdot v} 
+	{F = \frac{\Delta p}{\Delta t} \rightarrow p = m \cdot v} 
 	
 	F & Kraft & [N] \\
 	p & Impuls & [Ns, kg \cdot m/s] \\
@@ -22,7 +22,7 @@ Ein Impuls ist folgendermassen beschrieben:
 \subsection{Elastizität}
 \includegraphics[width=\columnwidth]{./Images/elastizität.png}
 
-\subsubsection{Elastischer Stoss} \kuchling{119}
+\subsection{Elastischer Stoss} \kuchling{119}
 \begin{formula}
 	{v_1' = \frac{(m_1 - m_2)v_1 + 2m_2v_2}{m_1 + m_2} \\ \\
  	 v_2' = \frac{(m_2 - m_1)v_2 + 2m_1v_1}{m_2 + m_1}}
@@ -32,7 +32,7 @@ Ein Impuls ist folgendermassen beschrieben:
     v' & Geschw. \underline{nach} Stoss & [m/s] \\
 \end{formula}
 
-\subsubsection{Unelastischer Stoss} \kuchling{121}
+\subsection{Unelastischer Stoss} \kuchling{121}
 \begin{formula}
 	{v' = \frac{m_1v_1 + m_2v_2}{m_1 + m_2}}
 	
@@ -51,21 +51,19 @@ Ein Impuls ist folgendermassen beschrieben:
 \end{formula}
 
 \subsubsection{Schwerpunktgeschwindigkeit}
-\todo{
-	\[
-		u = \frac{m_1v_1 + m_2v_2}{m_1 + m_2}
-	\]
-	\[
-		E_{Kin} = \frac{m_1 + m_2}{2}u^2 + \frac{m_1}{2}(v_1 - u)^2 + \frac{m_2}{2}(v_2 - u)^2
-	\]
-}
+Die Schwerpunktgeschwindigkeit $u$ kann mit folgender Formel berechnet werden. Damit können System, welche sich relativ bewegen, mit einem fixen Bezugspunkt berechnet werden.
+\[
+	u = \frac{m_1v_1 + m_2v_2}{m_1 + m_2}
+\]
+\[
+	E_{Kin} = \frac{m_1 + m_2}{2}u^2 + \frac{m_1}{2}(v_1 - u)^2 + \frac{m_2}{2}(v_2 - u)^2
+\]
 
-
-\subsubsection{Dehnung \kuchling{184}}
+\subsection{Dehnung \kuchling{184}}
 \begin{formula}
 	{\sigma = \frac{F}{A} \\ = E \frac{\Delta l}{l}	= E\varepsilon}
 	
-	\varepsilon & Relative Längenänd. & [m]\\
+	\varepsilon & Relative Längenänd. & [1]\\
 	l & Länge \underline{ohne} Kraft & [m]\\
 	\Delta l & Längeänd. \underline{mit} Kraft & [m]\\
 	E & Elastizitätmodul & \\
@@ -73,15 +71,5 @@ Ein Impuls ist folgendermassen beschrieben:
 	A & Querschnittsfläche & [m^2]\\
 \end{formula}
 
-\subsection{Drehimpuls \kuchling{138}}
-\begin{formula}
-	{L = M \cdot t =\\ J \cdot \omega = \vec{r} \times \vec{p}} 
-		
-	L & Drehimpuls & [\frac{kg\cdot m^2}{s}, Nms] \\
-	M & Drehmoment & [Nm] \\
-	\omega & Winkelgeschwindigkeit & [1/s] \\
-	J & Trägheitsmoment Achse & [kg \cdot m^2]
-\end{formula}
-\newpage
-\includegraphics[width=\columnwidth]{./Images/Trägheitsmoment.png}
+
 \newpage

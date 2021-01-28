@@ -1,0 +1,88 @@
+
+\section{Dynamik}
+\subsection{Kreisbewegung}\label{kreisbewegung}
+\noindent Konstante Geschwindigkeit
+\begin{formula}
+	{\phi = \omega \cdot t} 
+	
+	\phi & Winkelweg & [rad] \\
+	\omega & Winkelgeschwindigkeit & [1/s] \\
+	t & Zeit & [s]
+\end{formula}
+\begin{formula}
+	{\omega = 2\pi \cdot u} 
+	
+	\omega & Winkelgeschwindigkeit & [1/s] \\
+	u & Umdrehungen & [Hz, s^{-1}] 
+\end{formula}
+
+\noindent Konstante Beschleunigung
+\begin{formula}
+	{\phi(t) = \frac{\alpha t^2}{2} + \omega_0 t + \phi_0 
+		\\
+		\omega = \alpha \cdot t} 
+	
+	\alpha & Winkelbesch. & [1/s^2] \\
+	\omega_0 & Anfangs W.Geschw. & [1/s] \\
+	\phi_0 & Anfangs W.Weg & [rad]
+\end{formula}
+
+\noindent Ohne Anfangsgeschwindigkeit
+\begin{formula}
+	{\omega = \sqrt{2 \cdot \alpha \cdot \phi}} 
+	
+	\alpha & Winkelbesch. & [1/s^2] \\
+	\omega & W.Geschw. & [1/s] \\
+	\phi & W.Weg & [rad]
+\end{formula}
+
+\noindent Mit Anfangsgeschwindigkeit
+\begin{formula}
+	{\omega_e = \sqrt{\omega_0^2 + 2\alpha \phi}} 
+	
+	\alpha & Winkelbesch. & [1/s^2] \\
+	\omega_e & End W.Geschw. & [1/s] \\
+	\omega_0 & Anfangs W.Geschw. & [1/s] \\
+	\phi & W.Weg & [rad]
+\end{formula}
+
+\noindent Die Winkelgeschwindigkeit Funktion kann verwendet werden, um die Dauer eines Abbremsvorgangs zu berechnen, da $\omega(t) = 0$ sein muss beim Stillstand und somit gilt: $t = \frac{-\omega_0}{\alpha}$
+\begin{formula}
+	{\omega(t) = \alpha \cdot t + \omega_0} 
+	
+	\alpha & Winkelbesch. & [1/s^2] \\
+	\omega_0 & Anfangs W.Geschw. & [1/s] \\
+\end{formula}
+
+\subsubsection{Umrechnung Linear- zu Kreis-Bewegung}
+Von einer Linearen in eine Kreisbewegung umrechnen (Siehe auch \verweiseref{kreisbewegung} und \verweiseref{linearbewegung}):
+\[\alpha = \frac{a}{r} \qquad \phi = \frac{s}{r} \qquad \omega = \frac{v}{r}\]
+
+\subsection{Rotation}
+\begin{formula}
+	{M = J \cdot \alpha} 
+	
+	M & Drehmoment & [Nm] \\
+	J & Trägheitsmoment Achse & [kg \cdot m^2] \\
+	\alpha & Winkelbesch. & [1/s^2]
+\end{formula}
+\begin{formula}
+	{u = \frac{\omega}{2\pi} = \frac{\alpha \cdot t}{2\pi}} 
+	
+	u & Umdrehungen & [s^{-1}] \\
+	\omega & W.Geschw. & [1/s] \\
+	\alpha & Winkelbesch. & [1/s^2]
+\end{formula}
+
+\subsection{Drehimpuls \kuchling{138}}
+\begin{formula}
+	{L = M \cdot t =\\ J \cdot \omega = \vec{r} \times \vec{p} \\} 
+		
+	L & Drehimpuls & [\frac{kg\cdot m^2}{s}, Nms] \\
+	M & Drehmoment & [Nm] \\
+	\omega & Winkelgeschwindigkeit & [1/s] \\
+	J & Trägheitsmoment Achse & [kg \cdot m^2]
+\end{formula}
+
+\subsection{Trägheitsmomente}
+Siehe \kuchling{131} für Tabelle!
